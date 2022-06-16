@@ -1,0 +1,9 @@
+@import './variables.scss';
+
+@mixin transitionUsual {
+  transition: all 0.25s ease-in-out;
+}
+
+@mixin media-for-mobile {
+  @media (max-width: 640px) { @content; }
+}

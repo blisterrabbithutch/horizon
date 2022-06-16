@@ -1,0 +1,34 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.wrapper {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title {
+  color: $white;
+  font-size: 24px;
+  font-family: 'Major Mono Display', monospace;
+}
+
+.accountBlock {
+  color: $white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  @include media-for-mobile {
+    font-size: 16px; 
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-left: 8px;
+}

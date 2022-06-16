@@ -1,0 +1,22 @@
+$yellow: #FEE500;
+$purple: #C53FF8;
+$green: #2EEB28;
+$blue: #2CC0FF;
+$red: #EB2828;
+$black: #000000;
+$gray: #D3D3D3;
+$white: #f1f1f1;
+
+$mobile_responsive_breakpoint: 640;
+
+:export {
+  yellow: $yellow;
+  purple: $purple;
+  green: $green;
+  blue: $blue;
+  red: $red;
+  black: $black;
+  gray: $gray;
+  white: $white;
+  mobile_responsive_breakpoint: $mobile_responsive_breakpoint;
+}

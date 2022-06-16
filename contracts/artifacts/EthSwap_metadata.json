@@ -1,0 +1,284 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract CZH",
+						"name": "_token1",
+						"type": "address"
+					},
+					{
+						"internalType": "contract LFJ",
+						"name": "_token2",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "czhRate",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensPurchased",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "czhRate",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensSold",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "buyTokens",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "czhRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "czhTokenBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lfjRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lfjTokenBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "sellTokens",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenToBuy",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_tokenToSell",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountToSell",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_token1Name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_token2Name",
+						"type": "string"
+					}
+				],
+				"name": "swapTokens",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenCZH",
+				"outputs": [
+					{
+						"internalType": "contract CZH",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenLFJ",
+				"outputs": [
+					{
+						"internalType": "contract LFJ",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Projects/horizon/contracts/EthSwap.sol": "EthSwap"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Projects/horizon/contracts/CZH.sol": {
+			"keccak256": "0x78cffb3f266813afa4dd72cd72dffc3a331bb2c2280c57b1f39553c8340e7016",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://22b30999c223f46c4dece46aebaacb22ad03c2b8c5553ea852f26bfbd0c42314",
+				"dweb:/ipfs/QmY8ypJv2PBjZd72dFRLYdpXcfTRzG5uxxwSUjMDFVMsm4"
+			]
+		},
+		"Projects/horizon/contracts/EthSwap.sol": {
+			"keccak256": "0x6a28fb8158132c423195aa41cc11709edef483214d64d04897a3f62a7651d36e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://26fd21258dd5da5b7ae115292e5b02ce030ef9172419ac8559715582882dae4f",
+				"dweb:/ipfs/QmWfyozQ7exRXjLXQ7AqDeEkjxBy3yisubHHCzn6Hb1tTY"
+			]
+		},
+		"Projects/horizon/contracts/LFJ.sol": {
+			"keccak256": "0x77f82c7638d6418fd8d0fecb2bc4e5a64280360bc2bc371f902288ec5b7d2128",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d9a5f560eb032e0a11076b6c3bdc0c6593322713833f054adc950d54c31dd202",
+				"dweb:/ipfs/QmRr6Pr4xU9XSUJwQnyU6yJ1P2WHqZgfPzFAumo3s3A5mV"
+			]
+		}
+	},
+	"version": 1
+}

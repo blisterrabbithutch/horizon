@@ -1,0 +1,117 @@
+@import "../../styles/variables";
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  color: $white;
+  margin-left: auto;
+  font-family: 'Major Mono Display', monospace;
+  margin-top: 8px;
+}
+
+.card {
+  background: rgba(255,255,255,0.75);
+  // backdrop-filter: blur(2px) grayscale(.4) brightness(1.2);
+  padding: 24px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 2px;
+  .inputGroup {
+    display: flex;
+  }
+  input:disabled {
+    background-color: white;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.titleRow {
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+.titleRowSecondary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+.rowTitleExchangeCurrency {
+  display: flex;
+  align-items: baseline;
+}
+
+.exchangeCurrency {
+  margin-left: 9px;
+  font-size: 14px;
+}
+
+.amountTitle {
+  display: block;
+  //width: 100%;
+  font-size: 20px;
+}
+
+.amountCurrency {
+  display: block;
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.amountValue {
+  display: block;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.rowTitle {
+  margin-bottom: 4px;
+}
+
+.balanceRow {
+  justify-content: flex-start;
+}
+
+.submit {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.radioButtons {
+  width: 100%;
+  display: flex;
+}
+
+.radioButton {
+  flex-grow: 1;
+  text-align: center;
+}
