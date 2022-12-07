@@ -1,1 +1,1 @@
-Deployed – http://horizon-swap.herokuapp.com/
+Deployed – https://celadon-kelpie-68492f.netlify.app/
