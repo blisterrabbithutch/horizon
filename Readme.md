@@ -1,5 +1,6 @@
 Deployed – https://celadon-kelpie-68492f.netlify.app/
 truffle migrate --network goerli
 
-1 добавляем стейт менеджер (контекст) - редакс
-2 добавляем класс веб3 абстракцию - класс свапалки в котором все расчеты и который наружу предоставляет только простые методы действий свапалки
+TODO:
+refactoring. add state manager - Redux
+add additional class abstraction for web3 instance - swap class for all calculations
