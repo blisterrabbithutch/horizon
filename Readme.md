@@ -1,6 +1,6 @@
 Deployed – https://celadon-kelpie-68492f.netlify.app/
-truffle migrate --network goerli
+migration: truffle migrate --network goerli
 
 TODO:
-refactoring. add state manager - Redux
-add additional class abstraction for web3 instance - swap class for all calculations
+1) refactoring. add state manager - Redux for better readability.
+2) add additional class abstraction for web3 instance - Horizon swap class for all calculations, web3 instance interactions
